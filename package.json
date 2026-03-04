@@ -1,0 +1,39 @@
+{
+  "name": "hoowers-logs-bot",
+  "version": "1.0.0",
+  "description": "Full stack Discord bot for logging server events",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "api": "ts-node-dev --respawn --transpile-only src/api/server.ts"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "logging",
+    "fullstack"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.95",
+    "bcrypt": "^6.0.0",
+    "discord.js": "^14.25.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.22.1",
+    "express-session": "^1.19.0",
+    "sqlite3": "^5.1.6",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/express": "^4.17.25",
+    "@types/express-session": "^1.18.2",
+    "@types/node": "^20.19.35",
+    "@types/sqlite3": "^3.1.11",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.3"
+  }
+}
